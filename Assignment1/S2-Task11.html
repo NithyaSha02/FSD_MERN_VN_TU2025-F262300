@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three CSS Methods </title>
+
+  <!-- External CSS file linked here -->
+  <link rel="stylesheet" href="S2-Task4.css">
+
+  <!-- Internal CSS for a specific section -->
+  <style>
+    section {
+      background-color: #f0f8ff;
+      padding: 20px;
+      border: 2px dashed #0077b6;
+      margin: 20px 0;
+    }
+    section h2 {
+      color: #0077b6;
+     
+    }
+  </style>
+</head>
+<body>
+  <!-- Inline CSS applied directly to this heading -->
+  <h1 style="color: darkred; text-align: center; margin-top: 20px;">
+    Welcome to the CSS Styling Demo
+  </h1>
+  <!-- ^^^ Inline CSS used here -->
+
+  <section>
+    <h2>Internal CSS Section</h2>
+    <p>This section is styled using internal CSS defined in the &lt;style&gt; block inside the HTML head.</p>
+  </section>
+  <!-- ^^^ Internal CSS used here -->
+
+  <div class="external-box">
+    <h3>External CSS Box</h3>
+    <p>This box is styled using external CSS from the linked <code>styles.css</code> file.</p>
+  </div>
+  <!-- ^^^ External CSS used here -->
+</body>
+</html>

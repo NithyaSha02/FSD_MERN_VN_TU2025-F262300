@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Saru Nithya</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="F1-Style.css" />
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <a href="index.html" style="color: var(--text); text-decoration: none;">Saru Nithya</a>
+        <label for="menu" class="nav-toggle" aria-label="Toggle navigation">Menu</label>
+        <input type="checkbox" id="menu" hidden />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header class="section">
+      <h1>Contact</h1>
+      <p class="muted">I’m happy to connect. Fill out the form and I’ll get back to you soon.</p>
+    </header>
+
+    <section class="section" aria-labelledby="contact-form-title">
+      <h2 id="contact-form-title">Send a message</h2>
+      <form action="#" method="post" novalidate>
+        <div class="form-row">
+          <div class="form-control">
+            <label for="fullname">Full name</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-control">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" />
+          </div>
+          <div class="form-control">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="What is this about?" required />
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <aside class="section contact-details" aria-labelledby="contact-info-title">
+      <h2 id="contact-info-title">Contact information</h2>
+      <p><strong>Email:</strong> saru.nithya@example.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Location:</strong> Avanashi, Tamil Nadu, India</p>
+
+      <div class="socials" aria-label="Social media">
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <strong>&copy; <span id="year"></span> Saru Nithya</strong>
+        <p class="muted">Built with semantic HTML, Flexbox, and Grid.</p>
+      </div>
+      <div class="footer-col">
+        <nav aria-label="Footer">
+          <ul class="nav-links" style="gap:0.5rem;">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="socials">
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>

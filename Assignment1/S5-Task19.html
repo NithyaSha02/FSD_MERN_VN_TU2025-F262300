@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background: #4A90E2; /* default desktop background */
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-auto-flow: column; /* horizontal by default */
+      justify-content: start;
+    }
+
+    li {
+      padding: 15px 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    li:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    /* 📱 Mobile: ≤768px */
+    @media (max-width: 768px) {
+      ul {
+        grid-auto-flow: row; /* stack vertically */
+        justify-items: start;
+      }
+      nav {
+        background: #333; /* darker background for mobile */
+      }
+    }
+
+    /* 📐 Medium: 768px–1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      nav {
+        background: #FF9800; /* orange background for medium screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</body>
+</html>

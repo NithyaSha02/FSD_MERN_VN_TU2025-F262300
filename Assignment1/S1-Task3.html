@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+     body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #f9f9f9;
+    }
+    input{
+        width: 200px;
+        display: inline-block;
+        padding-top:5px;
+    }
+    #gen{
+       display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+    #female,#male,#others{
+        width:15px;
+    }
+    select{
+        width: 200px;
+        display: inline-block;
+    }
+
+    #check{
+        width:20px;
+    }
+    p{
+        display: inline-block;
+    }
+    
+
+    label{
+        padding-top: 20px;
+    }
+
+    .gender{
+        padding-bottom: 5px;
+    }
+     #form{
+        text-align: center;
+     }
+     .btnsub{
+             text-align: center;
+     }
+    
+</style>
+<body>
+
+   
+ <form>
+    
+    <h2 id="form">Registration Form</h2>
+
+    <label for="name">Username</label>
+    <input type="text" placeholder="Enter Username" id="name">
+
+    <label for="pwd">Password</label>
+    <input type="password" placeholder="Enter your password" id="pwd">
+
+    <label for="confirm">confirm password</label>
+    <input type="password" placeholder="Conform password" id="confirm">
+
+    <label for="dob">Date of birth</label>
+    <input type="date" id="dob">
+
+ 
+    <label for="gender">Gender</label>
+    <div id="gen">
+    <input type="radio" name="Gender" id="female">
+    <label class="gender" for="female">Female</label>
+    <input type="radio" name="Gender" id="male">
+    <label class="gender"for="male">Male</label>
+    <input type="radio" name="Gender" id="others">
+    <label class="gender" for="others">Others</label>
+    </div>
+
+    <label for="country">Country</label>
+    <select id="country">
+     <option value="" >Select</option>
+     <option>India</option>
+     <option>Africa</option>
+     <option >Srilanka</option>
+     <option >France</option>
+     <option >Brazil</option>
+    </select>
+
+    <div id="box">
+    <input type="checkbox"  id="check">
+    <p for="check"> Accept Terms and condition</p>
+    </div>
+    <div class="btnsub">
+    <button id="btn" style="background-color: #ccc;">Submit</button>
+    </div>
+    
+    </form>
+</body>
+</html>
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inline Navigation</title>
+  <style>
+    nav.inline ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.inline li {
+      display: inline;   /* 👈 makes items sit side by side */
+      margin-right: 20px;
+    }
+
+    nav.inline a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="inline">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Block Navigation</title>
+  <style>
+    nav.block ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.block li {
+      display: block;   /* 👈 makes each item take full width */
+      margin-bottom: 10px;
+    }
+
+    nav.block a {
+      text-decoration: none;
+      color: #cc0077;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="block">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

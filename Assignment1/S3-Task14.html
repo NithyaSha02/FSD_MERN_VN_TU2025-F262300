@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Sidebar Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      color: #fff;
+      height: 100vh; /* full viewport height */
+      position: sticky;   /* 👈 key difference */
+      top: 0;             /* sticks when scrolling */
+      padding: 1rem;
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 2rem;
+      background-color: #f4f4f4;
+      height: 2000px; /* just to demonstrate scrolling */
+    }
+
+    .sidebar a {
+      display: block;
+      color: #ddd;
+      text-decoration: none;
+      margin: 0.5rem 0;
+    }
+
+    .sidebar a:hover {
+      color: #00aced;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Sidebar</h2>
+    <nav>
+      <a href="#section1">Section 1</a>
+      <a href="#section2">Section 2</a>
+      <a href="#section3">Section 3</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <h1>Main Content</h1>
+    <p id="section1">Scroll down to see how the sidebar stays visible.</p>
+    <p id="section2">Sticky positioning keeps the sidebar within its parent container.</p>
+    <p id="section3">This is useful for navigation menus or toolbars.</p>
+    <p style="margin-bottom:1500px;">Extra space for scrolling demo.</p>
+  </main>
+</body>
+</html>

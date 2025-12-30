@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Navigation Menu</title>
+  <style>
+    /* Reset default list styles */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a:link {
+      text-decoration: none;
+      color: #6a0dad; /* default purple */
+
+      /* Font properties */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* custom font family */
+      font-size: 1.2rem; /* font size */
+      font-weight: 600; /* font weight */
+      letter-spacing: 1px; /* extra spacing */
+      text-transform: uppercase; /* another font property */
+    }
+
+    nav a:visited {
+      color: #333333; /* dark gray for visited links */
+    }
+
+    nav a:hover {
+      color: #0077cc; /* blue on hover */
+    }
+
+    nav a:active {
+      color: #ff4500; /* orange when active/clicked */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="https://example.com/home">Home</a></li>
+      <li><a href="https://example.com/about">About</a></li>
+      <li><a href="https://example.com/services">Services</a></li>
+      <li><a href="https://example.com/contact">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Saru Nithya</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="F1-Style.css" />
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <a href="index.html" style="color: var(--text); text-decoration: none;">Saru Nithya</a>
+        <label for="menu" class="nav-toggle" aria-label="Toggle navigation">Menu</label>
+        <input type="checkbox" id="menu" hidden />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header class="section">
+      <h1>Projects</h1>
+      <p class="muted">A selection of my recent work. Built with semantic HTML, accessible components, and clean CSS layout.</p>
+    </header>
+
+    <!-- Responsive CSS Grid of at least 6 project cards -->
+    <section class="section" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">Portfolio gallery</h2>
+      <div class="projects-grid">
+        <!-- Project card 1 -->
+        <article class="card project-card">
+          <img src="assets/img/placeholder-1.jpg" alt="Screenshot of Project 1" />
+          <div style="padding:1rem;">
+            <h3>Responsive Card Grid</h3>
+            <p>Built a robust, mobile-first grid using CSS Grid and media queries. Focused on clean semantics and maintainability.</p>
+            <div class="tag-list">
+              <span class="tag">HTML</span><span class="tag">CSS Grid</span><span class="tag">A11y</span>
+            </div>
+            <div class="project-meta">
+              <a class="btn" href="#" aria-label="View live demo of Responsive Card Grid">Live</a>
+              <a class="btn" href="#" aria-label="View source code of Responsive Card Grid" style="background:var(--accent);">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Duplicate and vary details for minimum 6 cards -->
+        <article class="card project-card">
+          <img src="assets/img/placeholder-2.jpg" alt="Screenshot of Project 2" />
+          <div style="padding:1rem;">
+            <h3>Sticky Navigation</h3>
+            <p>Implemented a sticky header with graceful fallback and focus states, improving navigation on all screen sizes.</p>
+            <div class="tag-list">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">UX</span>
+            </div>
+            <div class="project-meta">
+              <a class="btn" href="#">Live</a>
+              <a class="btn" href="#" style="background:var(--accent);">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="assets/img/placeholder-3.jpg" alt="Screenshot of Project 3" />
+          <div style="padding:1rem;">
+            <h3>Flexbox Skills Section</h3>
+            <p>Created a responsive chip layout using Flexbox, wrapping gracefully and keeping spacing consistent.</p>
+            <div class="tag-list">
+              <span class="tag">Flexbox</span><span class="tag">CSS</span>
+            </div>
+            <div class="project-meta">
+              <a class="btn" href="#">Live</a>
+              <a class="btn" href="#" style="background:var(--accent);">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="assets/img/placeholder-4.jpg" alt="Screenshot of Project 4" />
+          <div style="padding:1rem;">
+            <h3>Accessible Form</h3>
+            <p>Built a contact form with labels, required fields, and sensible validation types for a better user experience.</p>
+            <div class="tag-list">
+              <span class="tag">HTML Forms</span><span class="tag">A11y</span>
+            </div>
+            <div class="project-meta">
+              <a class="btn" href="#">Live</a>
+              <a class="btn" href="#" style="background:var(--accent);">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="assets/img/placeholder-5.jpg" alt="Screenshot of Project 5" />
+          <div style="padding:1rem;">
+            <h3>Grid Dashboard</h3>
+            <p>Experimented with a grid-based dashboard layout that scales smoothly across breakpoints.</p>
+            <div class="tag-list">
+              <span class="tag">CSS Grid</span><span class="tag">Responsive</span>
+            </div>
+            <div class="project-meta">
+              <a class="btn" href="#">Live</a>
+              <a class="btn" href="#" style="background:var(--accent);">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <img src="assets/img/placeholder-6.jpg" alt="Screenshot of Project 6" />
+          <div style="padding:1rem;">
+            <h3>Portfolio Theme</h3>
+            <p>Designed a cohesive color scheme and typography set with shadows and rounded corners for modern polish.</p>
+            <div class="tag-list">
+              <span class="tag">Design</span><span class="tag">CSS</span><span class="tag">Theme</span>
+            </div>
+            <div class="project-meta">
+              <a class="btn" href="#">Live</a>
+              <a class="btn" href="#" style="background:var(--accent);">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects table -->
+    <section class="section" aria-labelledby="table-title">
+      <h2 id="table-title">Projects table</h2>
+      <table aria-describedby="projects-table-desc">
+        <caption id="projects-table-desc" style="caption-side: bottom; color: var(--muted); padding: 0.5rem;">Overview of projects, categories, and technologies.</caption>
+        <thead>
+          <tr>
+            <th>Project name</th>
+            <th>Category</th>
+            <th>Technologies</th>
+            <th>Completion date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Responsive Card Grid</td>
+            <td>Frontend</td>
+            <td>HTML, CSS Grid</td>
+            <td>2025-05-21</td>
+          </tr>
+          <tr>
+            <td>Sticky Navigation</td>
+            <td>UI</td>
+            <td>CSS, JS</td>
+            <td>2025-06-02</td>
+          </tr>
+          <tr>
+            <td>Flexbox Skills</td>
+            <td>Layout</td>
+            <td>CSS Flexbox</td>
+            <td>2025-06-15</td>
+          </tr>
+          <tr>
+            <td>Accessible Form</td>
+            <td>Forms</td>
+            <td>HTML, A11y</td>
+            <td>2025-07-05</td>
+          </tr>
+          <tr>
+            <td>Grid Dashboard</td>
+            <td>Frontend</td>
+            <td>CSS Grid</td>
+            <td>2025-07-25</td>
+          </tr>
+          <tr>
+            <td>Portfolio Theme</td>
+            <td>Design</td>
+            <td>CSS</td>
+            <td>2025-08-10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <strong>&copy; <span id="year"></span> Saru Nithya</strong>
+        <p class="muted">Built with semantic HTML, Flexbox, and Grid.</p>
+      </div>
+      <div class="footer-col">
+        <nav aria-label="Footer">
+          <ul class="nav-links" style="gap:0.5rem;">
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <div class="socials">
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
